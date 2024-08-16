@@ -8,7 +8,7 @@ body{
 .backi{
     width:210vh;
     height:100vh;
-    background-image: url('pictures/images-4.jpg');
+    background-image: url('images-4.jpg');
     background-size: cover;
     filter:brightness(1);
     filter:contrast(5);
@@ -69,7 +69,7 @@ body{
 .backii{
     width:210vh;
     height:100vh;
-    background-image: url('pictures/images-6.jpg');
+    background-image: url('images-6.jpg');
     background-size: cover;
     filter:brightness(-100);
     filter:contrast(10);
