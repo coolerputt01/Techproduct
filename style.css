@@ -1,0 +1,201 @@
+
+body{
+    background-image: linear-gradient(90deg,rgb(7, 7, 209),black);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+.backi{
+    width:210vh;
+    height:100vh;
+    background-image: url('pictures/images-4.jpg');
+    background-size: cover;
+    filter:brightness(1);
+    filter:contrast(5);
+    filter: saturate(4);
+    animation: changei linear;
+    animation-timeline: scroll();
+}
+@keyframes changei {
+    to{
+        filter:brightness(-1000);
+        filter:contrast(-20);
+        filter: saturate(0);
+        opacity:0.8;
+    }
+}
+.navbar{
+    border-bottom: 2px rgb(0, 4, 41) solid;
+    z-index: 1;
+    position: static;
+}
+.welcome{
+    margin-top:105px;
+    margin-left:100px;
+    max-width:20rem;
+    height:25rem;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    z-index:0;
+    position: relative;
+    animation: changeii linear;
+    animation-timeline: scroll();
+}
+.welcome::after{
+    content: '';
+    position:absolute;
+    width:20rem;
+    height:25rem;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    background-color: rgb(6, 1, 43);
+    z-index:-1;
+    transform: rotateX('78deg');
+    animation: changeii linear;
+    animation-timeline: scroll();
+}
+@keyframes changeii{
+    to{
+    opacity:0.5;
+    }
+}
+.texti{
+    background-color: transparent;
+    width:27rem;
+    margin-top:3rem;
+    margin-left:170px;
+    font-size:1.1em;
+}
+.backii{
+    width:210vh;
+    height:100vh;
+    background-image: url('pictures/images-6.jpg');
+    background-size: cover;
+    filter:brightness(-100);
+    filter:contrast(10);
+    filter: saturate(-100);
+    opacity:0.6;
+    animation: changeii linear;
+    animation-timeline: scroll();
+}
+@keyframes changeii {
+    to{
+        filter:brightness(10);
+        filter:contrast(1);
+        filter: saturate(5);
+        opacity: 0.73;
+    }
+}
+
+.backii img{
+    margin: 0 0 0 300px;
+    z-index: 0;
+    width: 30rem;
+    height:20rem;
+}
+
+.carousel{
+    margin-top:200px;
+}
+.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.show{
+    opacity:1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.welcome2{
+    margin-top:-50px;
+    margin-left:100px;
+    width:20rem;
+    height:25rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 7rem;
+    font-weight:2000%;
+    border: 2px rgb(0, 255, 170) solid;
+    z-index:0;
+    background-color: transparent;
+    filter: brightness(10);
+    text-align: center;
+}
+.welcome3{
+    margin-top:-250px;
+    margin-left:700px;
+    width:20rem;
+    height:25rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 7rem;
+    font-weight:2000%;
+    border: 2px rgb(166, 255, 0) solid;
+    z-index:0;
+    background-color: transparent;
+    filter: brightness(10);
+    text-align: center;
+}
+.welcome4{
+    margin-top:-250px;
+    margin-left:700px;
+    width:20rem;
+    height:25rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 7rem;
+    font-weight:2000%;
+    border: 2px rgb(255, 153, 0) solid;
+    z-index:0;
+    background-color: transparent;
+    filter: brightness(10);
+    text-align: center;
+}
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+@media all and (max-width: 1000px){
+    .texti{
+        left:-20%;
+        top:-20%;
+        transform: translate(20%,20%);    
+    }
+    .container-md{
+        max-width:912px;
+    }
+    body{
+        max-width:912px;
+    }
+    .carousel{
+        margin-top:500px;
+        margin-right:200px;
+        max-width:912px;
+    }
+    .backii img{
+        margin: 0 0 0 20px;
+        z-index: -1;
+        margin:0 auto;
+        width: 20rem;
+        height:10rem;
+    }
+    .welcome2{
+        width:15rem;
+        height:15rem;
+        border: none;
+    }
+    .welcome3{
+        width:15rem;
+        height:15rem;
+        margin-top: -200px;
+        margin-left:370px;
+        border: none;
+    }
+    .welcome4{
+        width:15rem;
+        height:15rem;
+        margin-top: -350px;
+        margin-left:350px;
+    }
+}

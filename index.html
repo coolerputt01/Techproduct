@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-md backi">
+            <nav class="navbar navbar-expand-lg">
+                <li class="navbar-brand text-info">
+                    <p>Tech Galore</p>
+                </li>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#" id="test" type="button" class=" btn text-white" data-toggle="tooltip" data-placement="bottom" title="Go Home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" id="test" class=" nav-link btn text-white" data-toggle="tooltip" data-placement="bottom" title="Price the tech">Tech Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" id="test" class=" nav-link btn text-white" data-toggle="tooltip" data-placement="bottom" title="Meet our developers">Our developers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" id="test" class=" nav-link btn text-white" data-toggle="tooltip" data-placement="bottom" title="Support us by donating">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="card text-white welcome justify-content-center bg-primary p-5">
+                    <h1 class="card-title">Welcome to Tech Galore!</h1>
+                </div>
+                <div class="card text-white texti text-center ">
+                    <div class="card-body">
+                        <p class="card-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium incidunt commodi rerum non distinctio eveniet, cupiditate veniam rem mollitia provident, vitae eum excepturi id quae, inventore iusto. Incidunt minus nisi corrupti neque, laudantium commodi ipsa, suscipit ratione quod, ut quis ab eius consectetur exercitationem ipsum. Inventore veniam eveniet esse excepturi. Odio distinctio molestiae quaerat. Sunt nisi sit itaque eos dignissimos explicabo sequi voluptas, consequatur at aut molestiae nostrum. Animi, corporis ut vitae esse voluptate unde earum saepe nesciunt, dolorem culpa accusantium. Fuga id asperiores ipsa! Recusandae, perspiciatis tenetur nostrum voluptatibus saepe voluptas, consequatur dolores sapiente, eius officiis debitis vitae.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container-md backii p-3">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                <img class="d-block w-25 imj" src="New folder/freepik_br_200df375-bd59-423f-8ca9-5fa587536017.png" alt="First slide">
+                <div class="card welcome2">
+                    <p class="card-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab molestiae dolore odit optio fugit ea fugiat voluptatum provident, maxime in eligendi sequi doloremque magni hic sunt quo. Quaerat, dicta.</p>
+                    <a class="btn btn-outline-primary align-middle" data-toggle="tooltip" data-placement="right" title="Order the product" style="width:6rem;">Order Now</a>
+                </div>
+            </div>
+            </div>
+              <div class="carousel-item">
+                <img class="d-block w-25 imj" src="New folder/freepik_br_201d4bb0-ea11-495b-a45b-b3f648f44fc6.png" alt="Second slide">
+                <div class="card welcome3">
+                    <p class="card-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab molestiae dolore odit optio fugit ea fugiat voluptatum provident, maxime in eligendi sequi doloremque magni hic sunt quo. Quaerat, dicta.</p>
+                    <a class="btn btn-outline-info align-middle" data-toggle="tooltip" data-placement="right" title="Order the product" style="width:6rem;">Order Now</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-25 imj" src="New folder/freepik_br_e2314216-57cd-4873-bb98-569fa6a88b78.png" alt="Third slide">
+                <div class="card welcome4">
+                    <p class="card-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab molestiae dolore odit optio fugit ea fugiat voluptatum provident, maxime in eligendi sequi doloremque magni hic sunt quo. Quaerat, dicta.</p>
+                    <a class="btn btn-outline-warning align-middle" data-toggle="tooltip" data-placement="right" title="Order the product" style="width:6rem;">Order Now</a>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }
+                else{
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        $(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+    </script>
+</body>
+</html>
